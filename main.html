@@ -1,16 +1,151 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .block-heading {
+      text-align: center;
+      color: #3b99e0;
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+    .block-heading p {
+      color: #666;
+      font-size: 14px;
+    }
+    .product {
+      background-color: #fff;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+    .summary {
+      background-color: #f7fbff;
+      border-top: 2px solid #5ea4f3;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    .summary h4 {
+      font-weight: bold;
+    }
+    .summary .row {
+      margin: 10px 0;
+    }
+    .summary .btn {
+      background-color: #3b99e0;
+      color: #fff;
+      width: 100%;
+      font-weight: bold;
+    }
+    .img-fluid {
+      max-height: 100px;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <div class="container my-5">
+    <div class="block-heading">
+      <h2>Shopping cart</h2>
+      <p>The customer is very important, the customer will be followed by the customer. Now, as an urn, I have no right to be in possession of property.</p>
+    </div>
+
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8">
+        <div class="product">
+          <div class="row align-items-center">
+            <div class="col-2">
+              <img src="https://m.media-amazon.com/images/I/71vvXGmdKWL._SX679_.jpg" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <h6 class="text-primary">I am very sorry</h6>
+              <p class="mb-0">Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+            </div>
+            <div class="col-3">
+              <label>Quantity:</label>
+              <input type="number" class="form-control" value="0">
+            </div>
+            <div class="col-3 text-end">
+              <h5>$120</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="row align-items-center">
+            <div class="col-2">
+              <img src="https://m.media-amazon.com/images/I/71vvXGmdKWL._SX679_.jpg" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <h6 class="text-primary">I am very sorry</h6>
+              <p class="mb-0">Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+            </div>
+            <div class="col-3">
+              <label>Quantity:</label>
+              <input type="number" class="form-control" value="1">
+            </div>
+            <div class="col-3 text-end">
+              <h5>$120</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="row align-items-center">
+            <div class="col-2">
+              <img src="https://m.media-amazon.com/images/I/71vvXGmdKWL._SX679_.jpg" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <h6 class="text-primary">I am very sorry</h6>
+              <p class="mb-0">Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+            </div>
+            <div class="col-3">
+              <label>Quantity:</label>
+              <input type="number" class="form-control" value="1">
+            </div>
+            <div class="col-3 text-end">
+              <h5>$120</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="summary">
+          <h4 class="mb-4">Summary</h4>
+          <div class="row">
+            <div class="col">Subtotal</div>
+            <div class="col text-end">$360</div>
+          </div>
+          <div class="row">
+            <div class="col">Discount</div>
+            <div class="col text-end">$0</div>
+          </div>
+          <div class="row">
+            <div class="col">Shipping</div>
+            <div class="col text-end">$0</div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col"><strong>Total</strong></div>
+            <div class="col text-end"><strong>$360</strong></div>
+          </div>
+          <button class="btn mt-4">checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
-
 </html>
